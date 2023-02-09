@@ -20,7 +20,7 @@ jobs:
         run: bash -c "echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc && echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc"
         shell: bash
       - name: Installing jekyll and bundler
-        run: bash -c "gem install jekyll bundler"
+        run: bash -c "sudo gem install jekyll bundler"
         shell: bash
       - name: Installing website dependencies
         run: bash -c "bundle install"
