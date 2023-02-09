@@ -23,10 +23,10 @@ jobs:
         run: bash -c "sudo gem install jekyll bundler"
         shell: bash
       - name: Installing website dependencies
-        run: bash -c "bundle install"
+        run: bash -c "sudo bundle install"
         shell: bash
       - name: Building website
-        run: bash -c "bundle exec jekyll build"
+        run: bash -c "sudo bundle exec jekyll build"
         shell: bash
       - name: Pushing to gh-pages
         uses: s0/git-publish-subdir-action@v2.6.0
