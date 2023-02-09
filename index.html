@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Roboskel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/logo/logo-mobile.png">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta name="description" content="Robotics Lab, SKEL, IIT, NCSR Demokritos" />
+  <meta property="og:title" content="Roboskel"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  <meta property="og:description" content="Robotics Lab, SKEL, IIT, NCSR Demokritos"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-home'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Info')">Info &#8628; </a>
+      
+        <div id="Info" class="dropdown-content" >
+
+           
+                <a href="/team/">Team</a>
+            
+                <a href="/partners/">Partners</a>
+            
+                <a href="/for_students/">For students</a>
+            
+                <a href="/for_companies/">For companies</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Our work')">Our work &#8628; </a>
+      
+        <div id="Our work" class="dropdown-content" >
+
+           
+                <a href="/research">Activities</a>
+            
+                <a href="/publications/">Publications</a>
+            
+                <a href="/projects/">Projects</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+
+      
+        <a href="/news/">News</a>
+        
+        
+    </li>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Demos')">Demos &#8628; </a>
+      
+        <div id="Demos" class="dropdown-content" >
+
+           
+                <a href="/cobot">Cobot</a>
+            
+                <a href="/ugv">UGV</a>
+            
+                <a href="/uav">UAV</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+
+      
+        <a href="/contact/">Contact</a>
+        
+        
+    </li>
+    
+  </ul>
+</div>
+
+<script>
+    function mobile_click(div_id) {
+        let d = document.getElementById(div_id);
+        if (getComputedStyle(d)["display"] == "block") {
+            d.style.display = 'none'
+        }
+        else {
+            d.style.display = 'block';
+        }
+    }
+</script>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="110px" height="40px" alt="Roboskel" src="/images/logo/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="37px" height="32px" alt="Roboskel" src="/images/logo/logo-mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Info &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/team/">Team</a>
+            
+                <a href="/partners/">Partners</a>
+            
+                <a href="/for_students/">For students</a>
+            
+                <a href="/for_companies/">For companies</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Our work &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/research">Activities</a>
+            
+                <a href="/publications/">Publications</a>
+            
+                <a href="/projects/">Projects</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+      
+        <a href="/news/">News</a>
+        
+        
+    </li>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Demos &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/cobot">Cobot</a>
+            
+                <a href="/ugv">UGV</a>
+            
+                <a href="/uav">UAV</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+      
+        <a href="/contact/">Contact</a>
+        
+        
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+  </div>
+</div>
+
+    <div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h1 id="roboskel---robotics-lab">Roboskel - Robotics Lab</h1>
+
+<p>Welcome to the robotics activity of the <a href="https://www.iit.demokritos.gr/labs/skel/" target="_blank">“Software and Knowledge Engineering Lab (SKEL) | The AI Lab”</a> of the <a href="https://www.iit.demokritos.gr/" target="_blank">Institute of Informatics and Telecommunications</a> in <a href="https://www.demokritos.gr/" target="_blank">NCSR “Demokritos”</a>.</p>
+
+        
+      </div>
+      
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="Roboskel" class="intro-image intro-image-absolute" src="images/illustrations/roboskel_intro.jpg" />
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      
+      
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="/research/01-overview/">Research Overview</a>
+            </h2>
+            <p>
+
+Roboskel aims at developing the robot capabilities needed for socially-aware robotic behavior, ...</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="/research/02-ros-training/">ROS2 training</a>
+            </h2>
+            <p>
+
+We are excited to be launching a series of ROS trainings. We want to share our long experience ...</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="/research/03-hrc/">Human Robot Collaboration</a>
+            </h2>
+            <p>
+
+From carrying a heavy object to supporting a rehabilitation exercise, humans coordinate their b...</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="/research">View All Activities</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="strip strip-grey">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+
+      
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature">
+          
+          <div class="feature-image"><img alt="Autonomous Navigation logo" src="/images/features/navigation.svg" width="80" height="80" /></div>
+          
+          <h2 class="feature-title">Autonomous Navigation</h2>
+          <div class="feature-content">Rough terrain exploration, quadcopter planning, space robotics.</div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature">
+          
+          <div class="feature-image"><img alt="Human-Robot Collaboration logo" src="/images/features/hrc.svg" width="80" height="80" /></div>
+          
+          <h2 class="feature-title">Human-Robot Collaboration</h2>
+          <div class="feature-content">Explainable and transparent behaviour of AI methods, human behaviour study and observation.</div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature">
+          
+          <div class="feature-image"><img alt="ROS logo" src="/images/features/ros.svg" width="80" height="80" /></div>
+          
+          <h2 class="feature-title">ROS</h2>
+          <div class="feature-content">Research, integration services and education.</div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">Roboskel</h2>
+          <ul>
+            
+            
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/roboskel/" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://github.com/roboskel-manipulation" target="blank"><img src="/images/social/github2.svg" title="Github2" alt="Github2" /></a>
+  
+    <a href="https://skel.ai" target="blank"><img src="/images/social/skel.png" title="SKEL" alt="SKEL" /></a>
+  
+    <a href="https://iit.demokritos.gr" target="blank"><img src="/images/social/iit.png" title="IIT" alt="IIT" /></a>
+  
+    <a href="https://demokritos.gr" target="blank"><img src="/images/social/ncsr.png" title="NCSR" alt="NCSR" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">From Roboskel with love.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', '');
+    </script>
+    
+
+</body>
+</html>

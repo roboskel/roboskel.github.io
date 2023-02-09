@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UAV demos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/logo/logo-mobile.png">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta name="description" content="Demos on UAVs" />
+  <meta property="og:title" content="UAV demos"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  <meta property="og:description" content="Demos on UAVs"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-basic'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Info')">Info &#8628; </a>
+      
+        <div id="Info" class="dropdown-content" >
+
+           
+                <a href="/team/">Team</a>
+            
+                <a href="/partners/">Partners</a>
+            
+                <a href="/for_students/">For students</a>
+            
+                <a href="/for_companies/">For companies</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Our work')">Our work &#8628; </a>
+      
+        <div id="Our work" class="dropdown-content" >
+
+           
+                <a href="/research">Activities</a>
+            
+                <a href="/publications/">Publications</a>
+            
+                <a href="/projects/">Projects</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+
+      
+        <a href="/news/">News</a>
+        
+        
+    </li>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Demos')">Demos &#8628; </a>
+      
+        <div id="Demos" class="dropdown-content" >
+
+           
+                <a href="/cobot">Cobot</a>
+            
+                <a href="/ugv">UGV</a>
+            
+                <a href="/uav">UAV</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+
+      
+        <a href="/contact/">Contact</a>
+        
+        
+    </li>
+    
+  </ul>
+</div>
+
+<script>
+    function mobile_click(div_id) {
+        let d = document.getElementById(div_id);
+        if (getComputedStyle(d)["display"] == "block") {
+            d.style.display = 'none'
+        }
+        else {
+            d.style.display = 'block';
+        }
+    }
+</script>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="110px" height="40px" alt="Roboskel" src="/images/logo/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="37px" height="32px" alt="Roboskel" src="/images/logo/logo-mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Info &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/team/">Team</a>
+            
+                <a href="/partners/">Partners</a>
+            
+                <a href="/for_students/">For students</a>
+            
+                <a href="/for_companies/">For companies</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Our work &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/research">Activities</a>
+            
+                <a href="/publications/">Publications</a>
+            
+                <a href="/projects/">Projects</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+      
+        <a href="/news/">News</a>
+        
+        
+    </li>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Demos &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/cobot">Cobot</a>
+            
+                <a href="/ugv">UGV</a>
+            
+                <a href="/uav">UAV</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+      
+        <a href="/contact/">Contact</a>
+        
+        
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="service service-single">
+                <h1 class="title">UAV demos</h1>
+                <div class="content"><h1 id="quadcopter-autonomous-navigation-from-and-to-tight-spots">Quadcopter autonomous navigation from and to tight spots</h1>
+<iframe src="https://player.vimeo.com/video/720585672?h=1d5ee4b0cf" width="640" height="312" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">Roboskel</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/roboskel/" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://github.com/roboskel-manipulation" target="blank"><img src="/images/social/github2.svg" title="Github2" alt="Github2" /></a>
+  
+    <a href="https://skel.ai" target="blank"><img src="/images/social/skel.png" title="SKEL" alt="SKEL" /></a>
+  
+    <a href="https://iit.demokritos.gr" target="blank"><img src="/images/social/iit.png" title="IIT" alt="IIT" /></a>
+  
+    <a href="https://demokritos.gr" target="blank"><img src="/images/social/ncsr.png" title="NCSR" alt="NCSR" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">From Roboskel with love.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', '');
+    </script>
+    
+
+</body>
+</html>

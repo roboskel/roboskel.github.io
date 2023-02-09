@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/logo/logo-mobile.png">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="News"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-news'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Info')">Info &#8628; </a>
+      
+        <div id="Info" class="dropdown-content" >
+
+           
+                <a href="/team/">Team</a>
+            
+                <a href="/partners/">Partners</a>
+            
+                <a href="/for_students/">For students</a>
+            
+                <a href="/for_companies/">For companies</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Our work')">Our work &#8628; </a>
+      
+        <div id="Our work" class="dropdown-content" >
+
+           
+                <a href="/research">Activities</a>
+            
+                <a href="/publications/">Publications</a>
+            
+                <a href="/projects/">Projects</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="active">
+
+      
+        <a href="/news/">News</a>
+        
+        
+    </li>
+    
+    <li class=" dropdown ">
+
+      
+        
+        <a ontouchend="mobile_click('Demos')">Demos &#8628; </a>
+      
+        <div id="Demos" class="dropdown-content" >
+
+           
+                <a href="/cobot">Cobot</a>
+            
+                <a href="/ugv">UGV</a>
+            
+                <a href="/uav">UAV</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+
+      
+        <a href="/contact/">Contact</a>
+        
+        
+    </li>
+    
+  </ul>
+</div>
+
+<script>
+    function mobile_click(div_id) {
+        let d = document.getElementById(div_id);
+        if (getComputedStyle(d)["display"] == "block") {
+            d.style.display = 'none'
+        }
+        else {
+            d.style.display = 'block';
+        }
+    }
+</script>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="110px" height="40px" alt="Roboskel" src="/images/logo/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="37px" height="32px" alt="Roboskel" src="/images/logo/logo-mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Info &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/team/">Team</a>
+            
+                <a href="/partners/">Partners</a>
+            
+                <a href="/for_students/">For students</a>
+            
+                <a href="/for_companies/">For companies</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Our work &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/research">Activities</a>
+            
+                <a href="/publications/">Publications</a>
+            
+                <a href="/projects/">Projects</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="active">
+      
+        <a href="/news/">News</a>
+        
+        
+    </li>
+    
+    <li class=" dropdown dropbtn ">
+      
+        
+        <a>Demos &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           
+                <a href="/cobot">Cobot</a>
+            
+                <a href="/ugv">UGV</a>
+            
+                <a href="/uav">UAV</a>
+            
+
+      </div>
+      
+    </li>
+    
+    <li class="">
+      
+        <a href="/contact/">Contact</a>
+        
+        
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+  </div>
+</div>
+
+    <div class="intro">
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <h1 class="title">News</h1>
+            <p> Follow our latest adventures, here!</p>
+      
+        <img alt=News class="intro-image intro-image-absolute" src="/images/illustrations/robot_news.png" />
+      
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+        <div class="content"><div id="filter_by" class="filter_by"></div>
+<ul id="news_list"></ul>
+
+<script>
+    var url_tag = new URLSearchParams(window.location.search).get("t");
+    var div = document.getElementById("filter_by");
+    var ul = document.getElementById("news_list");
+    if (url_tag != null) {
+        div.innerText = "Posts with the " + url_tag + " tag";
+    }
+    else {
+        div.style.display = "none";
+    }
+    
+        var has_tag = false;
+        
+            if (url_tag == null || "ROS2" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+            if (url_tag == null || "training" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+        if (has_tag) {
+            var li = document.createElement("li");
+            li.innerHTML = `
+            <div class="news-strip">
+                <a href="/2023/02/08/ROS-training/" class="post_title">
+                ROS2 Training
+            </a>
+            <br>
+            
+                &#9839;<a href="?t=ROS2" class="post_tag">
+                ROS2
+            </a>
+            
+                &#9839;<a href="?t=training" class="post_tag">
+                training
+            </a>
+            
+            <p>…  and Kart Challenge!!!</p>
+
+            </div>`;
+            ul.appendChild(li);
+        }
+    
+        var has_tag = false;
+        
+            if (url_tag == null || "website" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+            if (url_tag == null || "2023" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+        if (has_tag) {
+            var li = document.createElement("li");
+            li.innerHTML = `
+            <div class="news-strip">
+                <a href="/2023/02/05/new-website/" class="post_title">
+                New website
+            </a>
+            <br>
+            
+                &#9839;<a href="?t=website" class="post_tag">
+                website
+            </a>
+            
+                &#9839;<a href="?t=2023" class="post_tag">
+                2023
+            </a>
+            
+            <!---# [Another title]-->
+
+<p>Welcome to Roboskel’s new website!</p>
+
+            </div>`;
+            ul.appendChild(li);
+        }
+    
+        var has_tag = false;
+        
+            if (url_tag == null || "article" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+            if (url_tag == null || "hrc" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+            if (url_tag == null || "ERCIM" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+            if (url_tag == null || "2023" == url_tag) {
+                has_tag = true;
+                // There should be a {\% break \%} here, but it... breaks js
+            }
+        
+        if (has_tag) {
+            var li = document.createElement("li");
+            li.innerHTML = `
+            <div class="news-strip">
+                <a href="/2023/01/12/ERCIM/" class="post_title">
+                Transparent human-robot collaboration
+            </a>
+            <br>
+            
+                &#9839;<a href="?t=article" class="post_tag">
+                article
+            </a>
+            
+                &#9839;<a href="?t=hrc" class="post_tag">
+                hrc
+            </a>
+            
+                &#9839;<a href="?t=ERCIM" class="post_tag">
+                ERCIM
+            </a>
+            
+                &#9839;<a href="?t=2023" class="post_tag">
+                2023
+            </a>
+            
+            <!---# [Another title]-->
+
+<p>Check out our <a href="https://ercim-news.ercim.eu/en132/special/understanding-partners-behaviour-for-transparent-collaboration">contribution</a> on …</p>
+
+
+            </div>`;
+            ul.appendChild(li);
+        }
+    
+</script>
+
+</div>
+    </div>
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">Roboskel</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/roboskel/" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://github.com/roboskel-manipulation" target="blank"><img src="/images/social/github2.svg" title="Github2" alt="Github2" /></a>
+  
+    <a href="https://skel.ai" target="blank"><img src="/images/social/skel.png" title="SKEL" alt="SKEL" /></a>
+  
+    <a href="https://iit.demokritos.gr" target="blank"><img src="/images/social/iit.png" title="IIT" alt="IIT" /></a>
+  
+    <a href="https://demokritos.gr" target="blank"><img src="/images/social/ncsr.png" title="NCSR" alt="NCSR" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">From Roboskel with love.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', '');
+    </script>
+    
+
+</body>
+</html>
