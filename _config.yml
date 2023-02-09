@@ -41,6 +41,7 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-sass-converter
 
 exclude:
   - Gemfile
