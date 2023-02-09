@@ -9,9 +9,33 @@ jobs:
   gh-pages-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@2.5.0
+      - name: Checking out the repository
+        uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: gh-pages
-          commit_author: gstavrinos
+          fetch-depth: 0
+      - name: Installing ruby prerequisites
+        run: sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --quiet --yes ruby-full build-essential zlib1g-dev
+        shell: bash
+      - name: Tidying up gems
+        run: bash -c "echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc && echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc"
+        shell: bash
+      - name: Installing jekyll and bundler
+        run: bash -c "gem install jekyll bundler"
+        shell: bash
+      - name: Installing website dependencies
+        run: bash -c "bundle install"
+        shell: bash
+      - name: Building website
+        run: bash -c "bundle exec jekyll build"
+        shell: bash
+      - name: Pushing to gh-pages
+        uses: s0/git-publish-subdir-action@v2.6.0
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: _site
+          COMMIT_NAME: gstavrinos
+          COMMIT_EMAIL: gstavrinos@users.noreply.github.com
+          TARGET_DIR: /
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
