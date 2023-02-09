@@ -3,8 +3,8 @@ layout: page
 title: "ROS2 Training"
 tags: ROS2 training 
 ---
-
 ...  and Kart Challenge!!!
+<!--more-->
 
 <img src="/images/posts/ros-training-banner.jpg" height="400">
 
