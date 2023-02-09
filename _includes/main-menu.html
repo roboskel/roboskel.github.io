@@ -1,0 +1,23 @@
+<div id="main-menu" class="main-menu">
+  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  <ul>
+    {% for item in mainmenu %}
+    <li class="{% if item.dropdown != nil %} dropdown dropbtn {% endif %}{% if item.url == page.url %}active{% endif %}">
+      {% if item.dropdown == nil %}
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+        {% endif %}
+        {% if item.dropdown != nil %}
+        <a>{{ item.name }} &#8628; </a>
+      
+      <div class="dropdown-content">
+
+           {% for dditem in item.dropdown %}
+                <a href="{{ dditem.url | relative_url }}">{{ dditem.name }}</a>
+            {% endfor %}
+
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

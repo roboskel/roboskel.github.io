@@ -1,0 +1,56 @@
+.page-news {
+
+    .intro {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .intro-image {
+        width: 50%;
+        left: 100%;
+        margin: -8%;
+        padding: 5%;
+      }
+
+    .post_title {
+        font-size: xx-large;
+        color: $primary;
+    }
+
+    .post_tag {
+        color: $white;
+    }
+
+    .news-strip {
+        background: $white-offset;
+        padding: 10px;
+        border-radius: 3px;
+        width: 100%;
+        margin: 10px;
+        color: $dark;
+    }
+    #filter_by {
+        padding: 10px;
+        border-radius: 3px;
+        background-color: $white-offset;
+        width: max-content;
+        margin: 10px;
+        color: $dark;
+    }
+
+    #news_list {
+        list-style: none;
+        color: $dark;
+    }
+
+    ul {
+        margin-left: -20px;
+    }
+
+    li {
+        p {
+            color: $dark;
+        }
+    }
+}
+

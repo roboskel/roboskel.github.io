@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/roboskel/",
+    "image": "images/social/github.svg"
+  },
+  {
+    "name": "Github2",
+    "link": "https://github.com/roboskel-manipulation",
+    "image": "images/social/github2.svg"
+  },
+  {
+    "name": "SKEL",
+    "link": "https://skel.ai",
+    "image": "images/social/skel.png"
+  },
+  {
+    "name": "IIT",
+    "link": "https://iit.demokritos.gr",
+    "image": "images/social/iit.png"
+  },
+  {
+    "name": "NCSR",
+    "link": "https://demokritos.gr",
+    "image": "images/social/ncsr.png"
+  }
+]

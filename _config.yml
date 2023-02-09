@@ -1,0 +1,55 @@
+baseurl: '/'
+permalink: pretty
+title: 'Roboskel'
+
+excerpt_separator: <!--more-->
+
+logo:
+  mobile: "images/logo/logo-mobile.png"
+  mobile_height: "32px"
+  mobile_width: "37px"
+  desktop: "images/logo/logo.png"
+  desktop_height: "40px"
+  desktop_width: "110px"
+
+home: 
+  limit_services: 3
+
+collections:
+  publications:
+    output: true
+  research:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "research_item"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md

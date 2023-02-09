@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Autonomous Navigation",
+    "description": "Rough terrain exploration, quadcopter planning, space robotics.",
+    "image": {
+      "url": "images/features/navigation.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Human-Robot Collaboration",
+    "description": "Explainable and transparent behaviour of AI methods, human behaviour study and observation.",
+    "image": {
+      "url": "images/features/hrc.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "ROS",
+    "description": "Research, integration services and education.",
+    "image": {
+      "url": "images/features/ros.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

@@ -1,0 +1,35 @@
+---
+layout: default
+bodyClass: "page-team"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="team team-single">
+            {% if page.image %}
+            <div class="team-image">
+                <img alt={{ page.title }} class="img-fluid mb-2" src="{{ page.image | relative_url }}" />
+            </div>
+            {% endif %}
+        <h1 class="title">{{page.title}}</h1>
+        <div class="container team-meta">
+            <p class="">{{ page.jobtitle }}</p>
+            {% if page.githuburl %}
+            <a target="_blank" href="{{ page.githuburl}}" rel="noreferrer">Github</a>
+            {% endif %}
+            {% if page.linkedinurl %}
+            <a target="_blank" href="{{ page.linkedinurl }}" rel="noreferrer">LinkedIn</a>
+            {% endif %}
+            <br>
+            <br>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+      <div class="team team-single">
+        <div class="content">{{content}}</div>
+    </div>
+  </div>
+  <a href="/team">Back to the team</a>
+</div>

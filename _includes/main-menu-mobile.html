@@ -1,0 +1,36 @@
+<div id="main-menu-mobile" class="main-menu-mobile">
+  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  <ul>
+    {% for item in mainmenu %}
+    <li class="{% if item.dropdown != nil %} dropdown {% endif %}{% if item.url == page.url %}active{% endif %}">
+
+      {% if item.dropdown == nil %}
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+        {% endif %}
+        {% if item.dropdown != nil %}
+        <a ontouchend="mobile_click('{{ item.name }}')">{{ item.name }} &#8628; </a>
+      
+        <div id="{{ item.name }}" class="dropdown-content" >
+
+           {% for dditem in item.dropdown %}
+                <a href="{{ dditem.url | relative_url }}">{{ dditem.name }}</a>
+            {% endfor %}
+
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+    function mobile_click(div_id) {
+        let d = document.getElementById(div_id);
+        if (getComputedStyle(d)["display"] == "block") {
+            d.style.display = 'none'
+        }
+        else {
+            d.style.display = 'block';
+        }
+    }
+</script>

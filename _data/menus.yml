@@ -1,0 +1,57 @@
+main:
+  - name: "Info"
+    url: "/team/"
+    weight: 1
+    dropdown:
+      - name: "Team"
+        url: "/team/"
+        weight: 1
+      - name: "Partners"
+        url: "/partners/"
+        weight: 2
+      - name: "For students"
+        url: "/for_students/"
+        weight: 3
+      - name: "For companies"
+        url: "/for_companies/"
+        weight: 4
+  - name: "Our work"
+    url: "/research/"
+    weight: 2
+    dropdown:
+    - name: "Activities"
+      url: "/research"
+      weight: 1
+    - name: "Publications"
+      url: "/publications/"
+      weight: 3
+    - name: "Projects"
+      url: "/projects/"
+      weight: 4
+  - name: "News"
+    url: "/news/"
+    weight: 3
+  - name: "Demos"
+    url: "/demos/"
+    weight: 4
+    dropdown:
+    - name: "Cobot"
+      url: "/cobot"
+      weight: 1
+    - name: "UGV"
+      url: "/ugv"
+      weight: 2
+    - name: "UAV"
+      url: "/uav"
+      weight: 3
+  - name: "Contact"
+    url: "/contact/"
+    weight: 5
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Contact"
+    url: "/contact/"
+    weight: 2

@@ -1,0 +1,64 @@
+.page-publications {
+
+    .intro {
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    .intro-image {
+        width: 50%;
+        left: 100%;
+        margin: -8%;
+        padding: 5%;
+      }
+
+    .post_title {
+        color: $dark;
+    }
+
+    .post_tag {
+        color: $white;
+    }
+
+    .separator {
+        border: 1px solid $primary-dark;
+    }
+
+    .external_link {
+        color: $primary;
+    }
+
+    .pub-strip {
+        background: $white-offset;
+        padding: 10px;
+        border-radius: 3px;
+        width: 100%;
+        margin: 10px;
+        color: $dark;
+    }
+    #filter_by {
+        padding: 10px;
+        border-radius: 3px;
+        background-color: $white-offset;
+        width: max-content;
+        margin: 10px;
+        color: $dark;
+    }
+
+    #pub_list {
+        list-style: none;
+        color: $dark;
+    }
+
+    ul {
+        margin-left: -20px;
+    }
+
+    li {
+        p {
+            color: $dark;
+        }
+    }
+}
+
+
