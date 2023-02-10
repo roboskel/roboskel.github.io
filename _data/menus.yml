@@ -23,7 +23,7 @@ main:
       url: "/research"
       weight: 1
     - name: "Publications"
-      url: "/publications/"
+      url: "/publications"
       weight: 3
     - name: "Projects"
       url: "/projects/"
